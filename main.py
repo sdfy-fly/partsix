@@ -15,7 +15,7 @@ main_router = APIRouter()
 # app.include_router(main_router)
 
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="./static/partsix"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
