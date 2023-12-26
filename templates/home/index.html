@@ -2,7 +2,9 @@
 
 {% block content %}
 
-    {% include 'base/header.html' %}
+    {% with mb = '20' %}
+        {% include 'base/header.html' %}
+    {% endwith %}
 
     <main class="main__content_wrapper">
         {% include 'home/_includes/_slider.html' %}
