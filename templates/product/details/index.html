@@ -1,0 +1,28 @@
+{% extends 'base/index.html' %}
+
+{% block title %}
+    <title>Partsix - Product Details</title>
+{% endblock %}
+
+{% block content %}
+
+    {% with hidden = True, active_tab = 'shop' %}
+        {% include 'base/header.html' %}
+    {% endwith %}
+
+    <main class="main__content_wrapper">
+        {% include 'product/details/_includes/_breadcrumb.html' %}
+        {% include 'product/details/_includes/_general.html' %}
+        {% include 'product/details/_includes/_info.html' %}
+        {% include 'product/details/_includes/_recomended.html' %}
+        {% include 'base/shipping.html' %}
+    </main>
+
+    {% with hidden = True %}
+        {% include 'base/footer.html' %}
+    {% endwith %}
+
+{% endblock %}
+
+
+
