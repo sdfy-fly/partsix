@@ -1,0 +1,35 @@
+<!-- Start product section -->
+<section class="product__section section--padding ">
+    <div class="container">
+        <div class="section__heading border-bottom mb-30">
+            <h2 class="section__heading--maintitle">You <span>may also like</span></h2>
+        </div>
+        <div class="product__section--inner pb-15 product__swiper--activation swiper">
+            <div class="swiper-wrapper">
+                {% for index in range(1, 6) %}
+                    <div class="swiper-slide">
+                        {% include 'product/details/_includes/_recomended_product.html' %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="swiper__nav--btn swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class=" -chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </div>
+            <div class="swiper__nav--btn swiper-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class=" -chevron-left">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End product section -->
+
