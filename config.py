@@ -1,9 +1,12 @@
+from pathlib import Path
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
 # App
+BASE_DIR = Path(__file__).parent
+SHOW_SQL_QUERY = False
 APP_HOST = '127.0.0.1'
 APP_PORT = 8000
 
