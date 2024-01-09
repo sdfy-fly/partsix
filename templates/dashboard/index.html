@@ -1,0 +1,36 @@
+{% extends 'base/index.html' %}
+
+{% block content %}
+
+    {% with mb = '20' %}
+        {% include 'base/header.html' %}
+    {% endwith %}
+
+    <main class="main__content_wrapper">
+        {% include 'dashboard/_includes/_slider.html' %}
+
+        {% include 'dashboard/_includes/_categories.html' %}
+
+        {% include 'dashboard/_includes/_banner.html' %}
+
+        {% include 'dashboard/_includes/_populars.html' %}
+
+        {% include 'dashboard/_includes/_discount_banner.html' %}
+
+        {% include 'dashboard/_includes/_populars_with_category.html' %}
+
+        {% include 'dashboard/_includes/_deal_of_day.html' %}
+
+        {% include 'dashboard/_includes/_top_sale.html' %}
+
+        {% include 'dashboard/_includes/_product_showsale.html' %}
+
+        {% include 'dashboard/_includes/_blog.html' %}
+    </main>
+
+    {% include 'base/footer.html' %}
+
+    {% include 'dashboard/modals/quickview.html' %}
+    {% include 'dashboard/modals/entry.html' %}
+
+{% endblock %}

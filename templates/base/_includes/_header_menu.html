@@ -12,7 +12,7 @@
 <nav class="header__menu--navigation">
     <ul class="header__menu--wrapper d-flex">
         <li class="header__menu--items">
-            <a {{ generate_menu_class('home') }} href="index.html">
+            <a {{ generate_menu_class('home') }} href="{{ url_for('dashboard') }}">
                 Home
                 <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12"
                      height="7.41" viewBox="0 0 12 7.41">
@@ -22,7 +22,7 @@
             </a>
             <ul class="header__sub--menu">
                 <li class="header__sub--menu__items">
-                    <a href="index.html" class="header__sub--menu__link">Home One</a>
+                    <a href="{{ url_for('dashboard') }}" class="header__sub--menu__link">Home One</a>
                 </li>
                 <li class="header__sub--menu__items">
                     <a href="index-2.html" class="header__sub--menu__link">Home Two</a>
@@ -62,8 +62,8 @@
                             </a>
                         </li>
                         <li class="header__mega--sub__menu_li">
-                            <a class="header__mega--sub__menu--title" href="shop-grid.html">Shop
-                                Grid
+                            <a class="header__mega--sub__menu--title" href="shop-grid.html">
+                                Shop Grid
                             </a>
                         </li>
                         <li class="header__mega--sub__menu_li">
